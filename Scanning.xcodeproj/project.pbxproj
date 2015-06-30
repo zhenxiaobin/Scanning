@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		600456EE1B4241290066E5BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 600456ED1B4241290066E5BD /* main.m */; };
-		600456F11B4241290066E5BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 600456F01B4241290066E5BD /* AppDelegate.m */; };
+		600456F11B4241290066E5BD /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 600456F01B4241290066E5BD /* SMAppDelegate.m */; };
 		600456F31B4241290066E5BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600456F21B4241290066E5BD /* Images.xcassets */; };
 		600456F61B4241290066E5BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600456F41B4241290066E5BD /* LaunchScreen.xib */; };
 		600457021B4241290066E5BD /* ScanningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 600457011B4241290066E5BD /* ScanningTests.m */; };
+		600457101B4241F80066E5BD /* SMScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004570F1B4241F80066E5BD /* SMScanViewController.m */; };
+		600457131B4245E10066E5BD /* SMBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 600457121B4245E10066E5BD /* SMBackButton.m */; };
+		6004571F1B424B2D0066E5BD /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004571D1B424B2D0066E5BD /* SMViewController.m */; };
+		600457201B424B2D0066E5BD /* SMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6004571E1B424B2D0066E5BD /* SMViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +32,20 @@
 		600456E81B4241290066E5BD /* Scanning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		600456EC1B4241290066E5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600456ED1B4241290066E5BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		600456EF1B4241290066E5BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		600456F01B4241290066E5BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		600456EF1B4241290066E5BD /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		600456F01B4241290066E5BD /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
 		600456F21B4241290066E5BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		600456F51B4241290066E5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		600456FB1B4241290066E5BD /* ScanningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		600457001B4241290066E5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600457011B4241290066E5BD /* ScanningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanningTests.m; sourceTree = "<group>"; };
+		6004570E1B4241F80066E5BD /* SMScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMScanViewController.h; sourceTree = "<group>"; };
+		6004570F1B4241F80066E5BD /* SMScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMScanViewController.m; sourceTree = "<group>"; };
+		600457111B4245E10066E5BD /* SMBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBackButton.h; sourceTree = "<group>"; };
+		600457121B4245E10066E5BD /* SMBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBackButton.m; sourceTree = "<group>"; };
+		6004571C1B424B2D0066E5BD /* SMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
+		6004571D1B424B2D0066E5BD /* SMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
+		6004571E1B424B2D0066E5BD /* SMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +87,15 @@
 		600456EA1B4241290066E5BD /* Scanning */ = {
 			isa = PBXGroup;
 			children = (
-				600456EF1B4241290066E5BD /* AppDelegate.h */,
-				600456F01B4241290066E5BD /* AppDelegate.m */,
+				600456EF1B4241290066E5BD /* SMAppDelegate.h */,
+				600456F01B4241290066E5BD /* SMAppDelegate.m */,
+				6004571C1B424B2D0066E5BD /* SMViewController.h */,
+				6004571D1B424B2D0066E5BD /* SMViewController.m */,
+				6004571E1B424B2D0066E5BD /* SMViewController.xib */,
+				6004570E1B4241F80066E5BD /* SMScanViewController.h */,
+				6004570F1B4241F80066E5BD /* SMScanViewController.m */,
+				600457111B4245E10066E5BD /* SMBackButton.h */,
+				600457121B4245E10066E5BD /* SMBackButton.m */,
 				600456F21B4241290066E5BD /* Images.xcassets */,
 				600456F41B4241290066E5BD /* LaunchScreen.xib */,
 				600456EB1B4241290066E5BD /* Supporting Files */,
@@ -155,6 +173,7 @@
 		600456E01B4241290066E5BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SM;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = SevenMay;
 				TargetAttributes = {
@@ -192,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				600456F61B4241290066E5BD /* LaunchScreen.xib in Resources */,
+				600457201B424B2D0066E5BD /* SMViewController.xib in Resources */,
 				600456F31B4241290066E5BD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600456F11B4241290066E5BD /* AppDelegate.m in Sources */,
+				600456F11B4241290066E5BD /* SMAppDelegate.m in Sources */,
 				600456EE1B4241290066E5BD /* main.m in Sources */,
+				600457131B4245E10066E5BD /* SMBackButton.m in Sources */,
+				6004571F1B424B2D0066E5BD /* SMViewController.m in Sources */,
+				600457101B4241F80066E5BD /* SMScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

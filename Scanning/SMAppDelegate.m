@@ -6,18 +6,23 @@
 //  Copyright (c) 2015年 SevenMay. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SMAppDelegate.h"
+#import "SMViewController.h"
 
-@interface AppDelegate ()
+@interface SMAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SMAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    SMViewController *svc = [[SMViewController alloc] init];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:svc];
+    self.window.rootViewController = nv;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
